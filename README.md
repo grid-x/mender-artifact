@@ -1,6 +1,6 @@
 [![Build Status](https://gitlab.com/Northern.tech/Mender/mender-artifact/badges/master/pipeline.svg)](https://gitlab.com/Northern.tech/Mender/mender-artifact/pipelines)
 [![Coverage Status](https://coveralls.io/repos/github/mendersoftware/mender-artifact/badge.svg?branch=master)](https://coveralls.io/github/mendersoftware/mender-artifact?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mendersoftware/mender-artifact)](https://goreportcard.com/report/github.com/mendersoftware/mender-artifact)
+[![Go Report Card](https://goreportcard.com/badge/github.com/grid-x/mender-artifact)](https://goreportcard.com/report/github.com/grid-x/mender-artifact)
 
 Mender Artifacts Library
 ==============================================
@@ -41,8 +41,8 @@ You can use the reader and the writer in go in the standard way:
 
 ```
 import (
-        "github.com/mendersoftware/mender-artifact/areader"
-        "github.com/mendersoftware/mender-artifact/awriter"
+        "github.com/grid-x/mender-artifact/areader"
+        "github.com/grid-x/mender-artifact/awriter"
 ...
 )
 ```

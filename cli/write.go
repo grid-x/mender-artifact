@@ -33,12 +33,12 @@ import (
 	"github.com/pkg/errors"
 	"github.com/urfave/cli"
 
-	"github.com/mendersoftware/mender-artifact/artifact"
-	"github.com/mendersoftware/mender-artifact/artifact/stage"
-	"github.com/mendersoftware/mender-artifact/awriter"
-	"github.com/mendersoftware/mender-artifact/cli/util"
-	"github.com/mendersoftware/mender-artifact/handlers"
-	"github.com/mendersoftware/mender-artifact/utils"
+	"github.com/grid-x/mender-artifact/artifact"
+	"github.com/grid-x/mender-artifact/artifact/stage"
+	"github.com/grid-x/mender-artifact/awriter"
+	"github.com/grid-x/mender-artifact/cli/util"
+	"github.com/grid-x/mender-artifact/handlers"
+	"github.com/grid-x/mender-artifact/utils"
 )
 
 func writeRootfsImageChecksum(rootfsFilename string,

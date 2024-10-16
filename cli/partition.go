@@ -29,9 +29,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/mendersoftware/mender-artifact/areader"
-	"github.com/mendersoftware/mender-artifact/artifact"
-	"github.com/mendersoftware/mender-artifact/utils"
+	"github.com/grid-x/mender-artifact/areader"
+	"github.com/grid-x/mender-artifact/artifact"
+	"github.com/grid-x/mender-artifact/utils"
 )
 
 const (

@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/mendersoftware/mender-artifact/artifact"
+	"github.com/grid-x/mender-artifact/artifact"
 
 	kms "cloud.google.com/go/kms/apiv1"
 	"cloud.google.com/go/kms/apiv1/kmspb"

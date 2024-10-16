@@ -24,7 +24,7 @@ TOOLS = \
 VERSION = $(shell git describe --tags --dirty --exact-match 2>/dev/null || git rev-parse --short HEAD)
 
 GO_LDFLAGS = \
-	-ldflags "-X github.com/mendersoftware/mender-artifact/cli.Version=$(VERSION)"
+	-ldflags "-X github.com/grid-x/mender-artifact/cli.Version=$(VERSION)"
 
 ifeq ($(V),1)
 BUILDV = -v
@@ -60,7 +60,7 @@ build-native-mac: .nopkcs11 $(PKGNAME)-darwin
 
 build-native-windows: GOOS = windows
 build-native-windows: TAGS = nopkcs11
-build-native-windows: GO_LDFLAGS = -ldflags "-X github.com/mendersoftware/mender-artifact/cli.Version=44d6905 -linkmode=internal -s -w -extldflags '-static' -extld=x86_64-w64-mingw32-gcc"
+build-native-windows: GO_LDFLAGS = -ldflags "-X github.com/grid-x/mender-artifact/cli.Version=44d6905 -linkmode=internal -s -w -extldflags '-static' -extld=x86_64-w64-mingw32-gcc"
 build-native-windows: .nopkcs11 $(PKGNAME)-windows.exe
 
 build-natives: build-native-linux build-native-mac build-native-windows
@@ -137,11 +137,11 @@ htmlcover: coverage
 	$(GO) tool cover -html=coverage.txt
 
 instrument-binary-contained:
-	docker run --rm --name instrument-binary --entrypoint "/bin/sh" -v $(shell pwd):/go/src/github.com/mendersoftware/mender-artifact golang:1.18 -c "cd /go/src/github.com/mendersoftware/mender-artifact && go install github.com/mendersoftware/gobinarycoverage@latest && make instrument-binary"
+	docker run --rm --name instrument-binary --entrypoint "/bin/sh" -v $(shell pwd):/go/src/github.com/grid-x/mender-artifact golang:1.18 -c "cd /go/src/github.com/grid-x/mender-artifact && go install github.com/mendersoftware/gobinarycoverage@latest && make instrument-binary"
 
 instrument-binary:
 	git apply patches/0001-Instrument-with-coverage.patch
-	gobinarycoverage github.com/mendersoftware/mender-artifact
+	gobinarycoverage github.com/grid-x/mender-artifact
 
 coverage:
 	rm -f coverage.txt

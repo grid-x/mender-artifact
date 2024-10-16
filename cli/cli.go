@@ -19,7 +19,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/mendersoftware/mender-artifact/artifact"
+	"github.com/grid-x/mender-artifact/artifact"
 
 	"github.com/urfave/cli"
 )

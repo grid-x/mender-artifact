@@ -27,7 +27,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/mendersoftware/mender-artifact/artifact"
+	"github.com/grid-x/mender-artifact/artifact"
 
 	"github.com/Keyfactor/signserver-go-client-sdk/api/signserver"
 	"github.com/minio/sha256-simd"

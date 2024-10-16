@@ -22,7 +22,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/mendersoftware/mender-artifact/artifact"
+	"github.com/grid-x/mender-artifact/artifact"
 )
 
 type BootstrapArtifact struct {

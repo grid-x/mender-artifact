@@ -25,7 +25,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/mendersoftware/mender-artifact/artifact"
+	"github.com/grid-x/mender-artifact/artifact"
 )
 
 // DataFile represents the minimum set of attributes each update file

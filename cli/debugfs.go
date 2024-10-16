@@ -26,7 +26,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/mendersoftware/mender-artifact/utils"
+	"github.com/grid-x/mender-artifact/utils"
 )
 
 const (

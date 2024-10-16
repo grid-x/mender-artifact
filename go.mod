@@ -1,4 +1,4 @@
-module github.com/mendersoftware/mender-artifact
+module github.com/grid-x/mender-artifact
 
 go 1.17
 
