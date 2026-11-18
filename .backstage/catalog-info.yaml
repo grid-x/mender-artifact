@@ -8,3 +8,4 @@ spec:
   type: library
   lifecycle: production
   owner: sre-device-infrastructure-team
+  system: device-services
