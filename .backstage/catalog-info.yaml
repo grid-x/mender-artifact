@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mender-artifact
+  annotations:
+    github.com/project-slug: grid-x/mender-artifact
+spec:
+  type: library
+  lifecycle: production
+  owner: sre-device-infrastructure-team
